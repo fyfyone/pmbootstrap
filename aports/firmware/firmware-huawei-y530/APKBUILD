@@ -12,7 +12,7 @@ depends="wcnss-wlan"
 makedepends=""
 install=""
 subpackages=""
-source="$pkgname-$pkgver-r$pkgrel.tar.gz::https://github.com/drebrez/vendor_huawei_y530/archive/master.tar.gz"
+source="$pkgname-$pkgver.tar.gz::https://github.com/drebrez/vendor_huawei_y530/archive/master.tar.gz"
 options="!strip !check !archcheck"
 
 builddir="$srcdir/vendor_huawei_y530-master/wifi"
@@ -26,4 +26,4 @@ package() {
 		install -D -m644 "$builddir/wlan/prima/$_i" "$pkgdir/lib/firmware/postmarketos/wlan/prima/$_i"
 	done
 }
-sha512sums="f412099bcaad52f488a8917edb7976a17301d266ddc112f3a8086a704620e5d0a52486f762e0dc9817b6664dacdfeef42517baf0e6bbec99b97f824b9c3585e6  firmware-huawei-y530-1-r1.tar.gz"
+sha512sums="f412099bcaad52f488a8917edb7976a17301d266ddc112f3a8086a704620e5d0a52486f762e0dc9817b6664dacdfeef42517baf0e6bbec99b97f824b9c3585e6  firmware-huawei-y530-1.tar.gz"
